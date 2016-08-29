@@ -13,9 +13,9 @@
 
 
 ###特性
-主要测试node 6.0对es6的支持情况，借助es6的数组对象扩展，实现了可扩展路由routes.index.js。
+使用node 6.0,和大量es6的语法，借助es6的数组对象扩展，实现了可扩展路由routes.index.js。
 数据库方面没有使用odm，orm类的库，使用原生的sql语句。
-
+加入了swagger生成的接口文档，可提供在线数据测试
 ###原理说明
 
 
@@ -27,10 +27,13 @@ git clone
 
 
 ###使用方法
+请提前安装 mysql数据库5.5版本
+redis,申请七牛服务。
+
 cd proj
 npm install
 npm start
-浏览器访问 http://127.0.0.1:3000/users
+浏览器访问 http://127.0.0.1:3000/static/index.html
 
 测试
 npm test
