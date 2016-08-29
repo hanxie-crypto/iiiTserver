@@ -1,0 +1,8 @@
+{
+    "findall": "select * from user",
+    "findbyid": "select * from user where userid=:userid",
+    "findcollectcourses": "select SQL_CALC_FOUND_ROWS a.* from course a left join collectcourse on a.couseid = b.courseid where b.userid=:userid,limit :start,:count",
+    "findpubskills": "select SQL_CALC_FOUND_ROWS a.* from skill a left join pubskill b on a.skillid=b.skillid where b.userid=:userid limit :start,:count",
+    "findusercommunion": "select SQL_CALC_FOUND_ROWS a.* from communion a where a.userid=:userid and a.com_communionid is null limit :start,:count"
+
+}

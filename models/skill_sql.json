@@ -1,0 +1,6 @@
+{
+    "addskillimg": "insert into skillimg (imgsrc) values(:imgsrc) ",
+    "findskills": "select SQL_CALC_FOUND_ROWS a.*,count(b.skillid) as prisenum, count(c.skillid) as collectnum  from skill a left join userprise b on a.skillid=b.skillid left join collectskill c on c.skillid = a.skillid  GROUP BY a.skillid HAVING (a.skilltypeid=CASE WHEN '0'=:skilltypeid THEN a.skilltypeid ELSE :skilltypeid END) order by a.skillid desc limit :start ,:count",
+    "addskill":"insert into skill (title,content,createtime,skilltypeid,skillimages) values(:title,:content,:createtime,:skilltypeid,:skillimages)",
+    "findskilltypes": "select * from skilltype"
+}
