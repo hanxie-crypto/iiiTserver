@@ -7,10 +7,10 @@ const proconfig = {
     mysql: {
         host: 'localhost',
         port: '3306',
-        database: 'ihb',
+        database: 'xxx',
         charset: 'utf8_general_ci',
-        user: 'youraccount',
-        password: 'yourpassword',
+        user: 'xxxx',
+        password: 'xxxx',
         multipleStatements: true,
     },
     listenport: 3000,
@@ -60,7 +60,7 @@ const devconfig = {
     mysql: {
         host: 'localhost',
         port: '3306',
-        database: 'ihb',
+        database: 'xxxxx',
         charset: 'utf8_general_ci',
         user: 'yourxxx',
         password: 'yourxxx',
