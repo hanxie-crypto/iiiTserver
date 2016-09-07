@@ -1,0 +1,4 @@
+{
+    "findbyaccount": "select userid,useraccount,username,useravator,userpwd from user where useraccount=:useraccount",
+    "adduser": "insert into user (useraccount,userpwd) select :useraccount,MD5(:userpwd) from dual where not exists(select 1 from user where useraccount=:useraccount)"
+}

@@ -1,0 +1,4 @@
+{
+    "findcourses": "select SQL_CALC_FOUND_ROWS a.*,count(b.courseid) as watchnum, count(c.courseid) as collectnum from course a left join coursewatch b on a.courseid=b.courseid left join collectcourse c on c.courseid = a.courseid GROUP BY a.courseid HAVING (a.coursetype=CASE WHEN '0'=:coursetype THEN a.coursetype ELSE :coursetype END) limit :start ,:count",
+    "findcoursebyid": "select * from course where courseid=:courseid"
+}
