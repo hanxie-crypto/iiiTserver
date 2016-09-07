@@ -60,7 +60,7 @@ const devconfig = {
     mysql: {
         host: 'localhost',
         port: '3306',
-        database: 'xxxxx',
+        database: 'xxxxx', 
         charset: 'utf8_general_ci',
         user: 'yourxxx',
         password: 'yourxxx',
